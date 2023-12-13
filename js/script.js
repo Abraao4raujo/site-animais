@@ -1,9 +1,9 @@
 import ScrollSuave from "./modules/scroll-suave.js";
 import ScrollAnima from "./modules/scroll-anima.js";
 import Accordion from "./modules/accordion.js";
-
 import TabNav from "./modules/tabnav.js";
 import initModal from "./modules/modal.js";
+
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -26,7 +26,9 @@ const tabNav = new TabNav(
 );
 tabNav.init();
 
-initModal();
+const modal = new initModal();
+modal.init();
+
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
