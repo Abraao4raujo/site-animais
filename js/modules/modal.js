@@ -1,4 +1,4 @@
-export default class initModal {
+export default class InitModal {
   constructor() {
     this.botaoAbrir = document.querySelector('[data-modal="abrir"]');
     this.botaoFechar = document.querySelector('[data-modal="fechar"]');
