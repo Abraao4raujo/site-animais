@@ -5,11 +5,11 @@ import TabNav from "./modules/tabnav.js";
 import InitModal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import FetchAnimais from "./modules/fetch-animais.js";
+import FetchBitcoin from "./modules/fetch-bitcoin.js";
 
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -35,7 +35,9 @@ tooltip.init();
 const fetchAnimais = new FetchAnimais(".numeros-grid");
 fetchAnimais.init();
 
+const fetchBitcoin = new FetchBitcoin();
+fetchBitcoin.init();
+
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initFetchBitcoin();
