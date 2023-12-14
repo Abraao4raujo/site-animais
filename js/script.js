@@ -35,8 +35,7 @@ tooltip.init();
 const fetchAnimais = new FetchAnimais(".numeros-grid");
 fetchAnimais.init();
 
-const fetchBitcoin = new FetchBitcoin();
-fetchBitcoin.init();
+FetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 initDropdownMenu();
 initMenuMobile();
